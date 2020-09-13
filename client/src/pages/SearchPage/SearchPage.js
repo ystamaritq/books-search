@@ -16,14 +16,33 @@ const SearchPage = () => {
 		authors,
 		link,
 	}) => {
-		// FIXME
-		notification.success({
-			message: `Successfully saved ${title}`,
-			description: "This will now show in your saved books",
-		});
+		var data = {
+			title: title,
+			subtitle: subtitle,
+			authors: authors,
+			link: link,
+			thumbnail: thumbnail,
+			description: description,
+		};
+
+		axios
+			.post("/api/books", data)
+			.then(function (response) {
+				notification.success({
+					message: `Successfully saved ${title}`,
+					description: "This will now show in your saved books",
+				});
+			})
+			.catch(function (error) {
+				console.log(error);
+				notification.error({
+					message: `Failed to save`,
+					description: "Failed to save book",
+				});
+			});
 	};
 
-	const onSearch = async (values) => {
+	const onSearch = (values) => {
 		console.log("Received values of form: ", values);
 
 		var config = {
