@@ -7,11 +7,13 @@ const BookSearchForm = ({ onSearch }) => {
 		<Form onFinish={onSearch}>
 			<Form.Item
 				name="book"
-				rules={[{ required: true, message: "Please enter a book name!" }]}
+				rules={[
+					{ required: true, message: "Please enter a book name to search!" },
+				]}
 			>
 				<Input
 					prefix={<BookOutlined className="site-form-item-icon" />}
-					placeholder="Enter Book Title ..."
+					placeholder="Enter Book Title to Search ..."
 				/>
 			</Form.Item>
 
