@@ -1,5 +1,14 @@
 import React from "react";
+import RowCard from "./../../components/RowCard";
+
 const SavedPage = () => {
-	return <div>Saved PAGE</div>;
+	return (
+		<>
+			<RowCard>
+				<h2>Saved Books</h2>
+			</RowCard>
+		</>
+	);
 };
+
 export default SavedPage;
