@@ -50,6 +50,7 @@ const BookCard = ({
 			title={subtitle}
 			description={description}
 		/>
+		<p>Author: {authors && authors.join(", ")}</p>
 	</Card>
 );
 
