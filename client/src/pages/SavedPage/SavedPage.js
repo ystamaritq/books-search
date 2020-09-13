@@ -7,7 +7,12 @@ const SavedPage = () => {
 		<>
 			<RowCard>
 				<h2>Saved Books</h2>
-				<BookCard />
+				<BookCard
+					title="Book Title Fetch"
+					bookImg="https://via.placeholder.com/150"
+					subtitle="Book subtitle example"
+					description="This book is an example"
+				/>
 			</RowCard>
 		</>
 	);
