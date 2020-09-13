@@ -1,15 +1,33 @@
 import React from "react";
-import { Card, Typography, Row } from "antd";
+import { Card, Avatar } from "antd";
+import {
+	EditOutlined,
+	EllipsisOutlined,
+	SettingOutlined,
+} from "@ant-design/icons";
 
-const { Title } = Typography;
+const { Meta } = Card;
 
-const BookCard = ({ title, bookImg, subtitle, description }) => (
-	<Card title={<Title level={2}>{title}</Title>}>
-		<h3>{subtitle}</h3>
-		<Row>
-			<img src={bookImg} alt="Book Picture" />
-			<p>{description}</p>
-		</Row>
+const BookCard = ({ image, title, description }) => (
+	<Card
+		style={{ width: 300 }}
+		cover={
+			<img
+				alt="example"
+				src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+			/>
+		}
+		actions={[
+			<SettingOutlined key="setting" />,
+			<EditOutlined key="edit" />,
+			<EllipsisOutlined key="ellipsis" />,
+		]}
+	>
+		<Meta
+			avatar={<Avatar src={image} />}
+			title={title}
+			description={description}
+		/>
 	</Card>
 );
 
