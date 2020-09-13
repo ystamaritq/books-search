@@ -1,17 +1,80 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import RowCard from "./../../components/RowCard";
-import BookCardSaved from "../../components/BookCardSaved";
+import BookCard from "../../components/BookCard";
+import { notification } from "antd";
+
+var axios = require("axios");
 
 const SavedPage = () => {
+	const [books, setBooks] = useState([]);
+
+	useEffect(() => {
+		loadSaved();
+	}, []);
+
+	const loadSaved = () => {
+		var config = {
+			method: "get",
+			url: "/api/books",
+			headers: {},
+		};
+
+		axios(config)
+			.then(function (response) {
+				setBooks(response.data);
+			})
+			.catch(function (error) {
+				console.log(error);
+				notification.error({
+					message: `Failed to load saved books`,
+					description:
+						"There was an error while loading saved books from storage",
+				});
+			});
+	};
+
+	const onDelete = ({ title, id }) => {
+		var config = {
+			method: "delete",
+			url: `/api/books/${id}`,
+			headers: {},
+		};
+
+		axios(config)
+			.then(function (response) {
+				notification.success({
+					message: `Successfully deleted ${title}`,
+					description: `Successfully deleted ${title} from your saved books`,
+				});
+				loadSaved();
+			})
+			.catch(function (error) {
+				console.log(error);
+				notification.error({
+					message: `Failed to delete book`,
+					description: "There was an error while deleting book from storage",
+				});
+			});
+	};
+
 	return (
 		<>
 			<RowCard>
 				<h2>Saved Books</h2>
-				<BookCardSaved
-					cover="https://via.placeholder.com/150"
-					title="Book Saved Title Fetch"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-				/>
+				{books.map((book, index) => (
+					<BookCard
+						key={index}
+						id={book._id}
+						thumbnail={book.thumbnail}
+						title={book.title}
+						subtitle={book.subtitle}
+						description={book.description}
+						authors={book.authors}
+						link={book.link}
+						action={onDelete}
+						saved={true}
+					/>
+				))}
 			</RowCard>
 		</>
 	);

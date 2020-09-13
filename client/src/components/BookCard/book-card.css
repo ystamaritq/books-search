@@ -1,0 +1,13 @@
+.ant-card {
+	margin-bottom: 20px !important;
+}
+
+.ant-avatar {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.ant-card-head {
+	background-color: #001529 !important;
+	color: white !important;
+}
