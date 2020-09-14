@@ -103,14 +103,14 @@ The dependencies listed below are all the NPM packages used throughout this proj
 #### The following images demonstrates the application functionality:
 
 <details>
-<summary>Employee Directory Demo Images (click to expand)</summary>
-<img src="./images/d1.png" width = "800px">
-<img src="./images/d2.png" width = "800px">
-<img src="./images/d3.png" width = "800px">
-<img src="./images/d4.png" width = "800px">
+<summary>Google Books Demo Images (click to expand)</summary>
+<img src="./images/1.png" width = "800px">
+<img src="./images/2.png" width = "800px">
+<img src="./images/3.png" width = "800px">
+<img src="./images/4.png" width = "800px">
+<img src="./images/5.png" width = "800px">
+<img src="./images/6.png" width = "800px">
 </details>
-
-<img src="readme/imgs/architecture-diagram.png" width = "800px">
 
 ## Licensing
 
