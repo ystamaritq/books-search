@@ -2,6 +2,7 @@
 
 ![npm](https://img.shields.io/npm/v/express?color=green&label=express&logo=NPM)
 ![npm](https://img.shields.io/npm/v/node?color=purple&label=node)
+![npm](https://img.shields.io/npm/v/react?color=gray&label=react&logo=react)
 ![npm](https://img.shields.io/npm/v/react-router-dom?color=yellowgreen&label=react-router-dom&logo=npm)
 ![npm](https://img.shields.io/npm/v/axios?color=9cf&label=axios&logo=npm)
 ![npm](https://img.shields.io/npm/v/mongoose?color=yellow&label=mongoose&logo=npm)
