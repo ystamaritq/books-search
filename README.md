@@ -105,10 +105,15 @@ The dependencies listed below are all the NPM packages used throughout this proj
 <details>
 <summary>Google Books Demo Images (click to expand)</summary>
 <img src="./readme-imgs/1.png" width = "800px">
+<hr>
 <img src="./readme-imgs/2.png" width = "800px">
+<hr>
 <img src="./readme-imgs/3.png" width = "800px">
+<hr>
 <img src="./readme-imgs/4.png" width = "800px">
+<hr>
 <img src="./readme-imgs/5.png" width = "800px">
+<hr>
 <img src="./readme-imgs/6.png" width = "800px">
 </details>
 
