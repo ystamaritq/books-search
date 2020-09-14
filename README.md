@@ -1,5 +1,13 @@
 # Google Books Search
 
+![npm](https://img.shields.io/npm/v/express?color=green&label=express&logo=NPM)
+![npm](https://img.shields.io/npm/v/node?color=purple&label=node)
+![npm](https://img.shields.io/npm/v/react-router-dom?color=yellowgreen&label=react-router-dom&logo=npm)
+![npm](https://img.shields.io/npm/v/axios?color=9cf&label=axios&logo=npm)
+![npm](https://img.shields.io/npm/v/mongoose?color=yellow&label=mongoose&logo=npm)
+![npm](https://img.shields.io/npm/v/google-books-search?color=blue&label=google-books-search&logo=npm)
+![npm](https://img.shields.io/npm/v/antd?color=red&label=antd&logo=npm)
+
 ### Table of Contents
 
 - [Description](#description)
@@ -12,6 +20,7 @@
 - [Installation Instructions](#installation-instructions)
   - [Project Technologies](#project-technologies)
   - [Node Dependencies](#node-depencencies)
+- [Demo](#demo)
 - [Licensing](#licensing)
 
 ---
@@ -87,6 +96,20 @@ The dependencies listed below are all the NPM packages used throughout this proj
 - `react-router-dom` - DOM bindings for React Router
 
 ---
+
+## Demo
+
+#### The following images demonstrates the application functionality:
+
+<details>
+<summary>Employee Directory Demo Images (click to expand)</summary>
+<img src="./images/d1.png" width = "800px">
+<img src="./images/d2.png" width = "800px">
+<img src="./images/d3.png" width = "800px">
+<img src="./images/d4.png" width = "800px">
+</details>
+
+<img src="readme/imgs/architecture-diagram.png" width = "800px">
 
 ## Licensing
 
