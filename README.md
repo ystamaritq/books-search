@@ -24,7 +24,7 @@
 
 ## User Story
 
-`As a user, I want to be able to search for a book, view, and save it. `
+`As a user, I want to be able to search for books, view book details, and save it. `
 
 ---
 
