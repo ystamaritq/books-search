@@ -79,10 +79,12 @@ The Google Books is based on MERN stack which is the combination of technologies
 - **React:** A JavaScript library for building user interfaces
 - **Node.js:** A cross-platform JavaScript runtime environment
 
+The dependencies listed below are all the NPM packages used throughout this project.
+
 - `mongoose` - Object modeling tool designed to work in an asynchronous environment
-- `node` - An asynchronous event-driven JavaScript runtime
 - `antd` - Ant Design React UI CSS library
 - `google-books-search` - A simple Node.js client for the Google Books API.
+- `react-router-dom` - DOM bindings for React Router
 
 ---
 
