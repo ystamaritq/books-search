@@ -18,7 +18,11 @@
 
 ## Description
 
-**Google Books** can search for books via the Google Books API and render them here. User has the option to "View" a book, bringing them to the book on Google Books, or "Save" a book, saving it to the Mongo database.
+**Google Books Platform** allows the user search and view saved google books.
+
+- _Search_ - User can search for books via the Google Books API and render them here. User has the option to "View" a book, bringing them to the book on Google Books, or "Save" a book, saving it to the Mongo database.
+
+- _Saved_ - Renders all books saved to the Mongo database. User has an option to "View" the book, bringing them to the book on Google Books, or "Delete" a book, removing it from the Mongo database.
 
 ---
 
@@ -76,13 +80,14 @@ Here is a list of all the core technologies / core dependencies used to develop 
 
 ### Node Dependencies
 
-The **dependencies** listed below are all the `npm packages` used throughout the App.
+The **dependencies** listed below are all the `npm packages` used throughout the App (MERN stack **Mongo-Express-React-Node**).
 
-- `express` - minimalist web framework for node.
-- `morgan` - HTTP request logger middleware for node.js
-- `mongoose` - object modeling tool designed to work in an asynchronous environment
-- `dotenv` - loads environment variables from a .env file into process.env
-- `antd Ant Design` - React UI CSS library
+- `node` - An asynchronous event-driven JavaScript runtime
+- `react` - A JavaScript library for building user interfaces
+- `express` - Minimalist web framework for node.
+- `mongoose` - Object modeling tool designed to work in an asynchronous environment
+- `Ant Design` - React UI CSS library antd
+- `google-books-search` - A simple Node.js client for the Google Books API.
 
 ---
 
