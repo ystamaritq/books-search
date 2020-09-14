@@ -72,21 +72,16 @@ To test this project, simply follow these steps:
 
 ### Project Technologies
 
-Here is a list of all the core technologies / core dependencies used to develop this application.
+The Google Books is based on MERN stack which is the combination of technologies used to create a web application. **MERN** includes four open-source components: _MongoDB_, _Express_, _React_, and _Node.js_ where:
 
-- `Node.js - An asynchronous event-driven JavaScript runtime`
-- `Express - Node.js web application framework that provides a robust set of features for web and mobile applications`
-- `Deploy web app using Heroku`
+- **MongoDB:** A cross-platform document database
+- **Express:** A back-end web application framework, minimalist web framework for node.
+- **React:** A JavaScript library for building user interfaces
+- **Node.js:** A cross-platform JavaScript runtime environment
 
-### Node Dependencies
-
-The **dependencies** listed below are all the `npm packages` used throughout the App (MERN stack **Mongo-Express-React-Node**).
-
-- `node` - An asynchronous event-driven JavaScript runtime
-- `react` - A JavaScript library for building user interfaces
-- `express` - Minimalist web framework for node.
 - `mongoose` - Object modeling tool designed to work in an asynchronous environment
-- `Ant Design` - React UI CSS library antd
+- `node` - An asynchronous event-driven JavaScript runtime
+- `antd` - Ant Design React UI CSS library
 - `google-books-search` - A simple Node.js client for the Google Books API.
 
 ---
